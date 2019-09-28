@@ -111,9 +111,6 @@ inputElement11.click();
 
 
 
-#driver.get("http://automationpractice.com/index.php?controller=order&multi-shipping=");
-
-
 
 
 driver.get("http://automationpractice.com/index.php?fc=module&module=cheque&controller=payment");
