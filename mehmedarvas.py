@@ -62,20 +62,34 @@ inputElement8 = driver.find_element_by_name ("submitAccount")
 inputElement8.click();
 
 
+
+import time 
+time.sleep(3)
+
+
 driver.get("http://automationpractice.com/index.php?id_category=5&controller=category");
 
+
+import time 
+time.sleep(3)
+
 driver.get("http://automationpractice.com/index.php?id_product=1&controller=product");
+
+
+import time 
+time.sleep(3)
 
 inputElement9 = driver.find_element_by_name ("Submit")
 inputElement9.click();
 
 
 import time 
-time.sleep(4)
+time.sleep(3)
 
 driver.get("http://automationpractice.com/index.php?controller=order");
 
-
+import time 
+time.sleep(3)
 
 driver.get("http://automationpractice.com/index.php?controller=order&step=1");
 
@@ -89,16 +103,24 @@ inputElement10 = driver.find_element_by_name("processAddress");
 inputElement10.click();
 
 
+import time 
+time.sleep(3)
+
 inputElement11 = driver.find_element_by_name ("cgv")
 inputElement11.click();
 
 
 
-driver.get("http://automationpractice.com/index.php?controller=order&multi-shipping=");
+#driver.get("http://automationpractice.com/index.php?controller=order&multi-shipping=");
+
+
 
 
 driver.get("http://automationpractice.com/index.php?fc=module&module=cheque&controller=payment");
 
+
+import time 
+time.sleep(3)
 
 
 driver.find_element_by_xpath("//*[text()='I confirm my order']").click();
